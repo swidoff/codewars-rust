@@ -70,7 +70,7 @@ fn interpreter(code: &str, iterations: usize, width: usize, height: usize) -> St
 #[test]
 fn simple_cases() {
     // println!("\n\n{}", interpreter("*[s[e]*]", 1000, 10, 10));
-    println!("\n\n{}", interpreter("* [[s*en] sw[w]enn [[e]w*ssss*nnnnw[w]ess[e]*[w]enn] ssss[*nnnn*essss] nnnnw[w]e ss]", 1000, 10, 10));
+    println!("\n\n{}", interpreter("* [[s*en] sw[w]enn [[e]w*ssss*nnnnw[w]ess[e]*[w]enn] ssss[*nnnn*essss] nnnnw[w]e ss]", 100000, 75, 20));
     // assert_eq!(interpreter("*e*e*e*es*es*ws*ws*w*w*w*n*n*n*ssss*s*s*s*", 0, 6, 9),
     //            "000000\r\n000000\r\n000000\r\n000000\r\n000000\r\n000000\r\n000000\r\n000000\r\n000000",
     //            "Your interpreter should initialize all cells in the datagrid to 0");
